@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenny Bites</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header bg-danger text-white text-center py-4">
+        <h1>Lenny Bites</h1>
+        <p>Your go-to food delivery service!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Lenny Bites</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#order">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center bg-light py-5">
+        <img src="./assets/bg2.jpeg" alt="Delicious food" class="hero-image img-fluid rounded">
+        <h2 class="mt-4">Discover Our Tasty Menu</h2>
+    </section>
+
+    <!-- Menu Section -->
+<section id="menu" class="menu py-5">
+    <h2 class="text-center mb-5">Our Menu</h2>
+    <div class="container">
+        <div class="menu-section">
+            <div class="menu-item">
+                <h3><img src="./assets/panini.jpeg" alt="Panini"> Panini</h3>
+                <ul>
+                    <li> Egg Panini - 1500cfa</li>
+                    <li> Egg + Cheese Panini - 1800cfa</li>
+                    <li> Egg + beef Panini - 2000cfa</li>
+                    <li> Beef Panini -  2000cfa</li>
+                    <li> Beef +  Cheese Panini - 2500cfa</li>
+                </ul>
+                <h4>Brunch box </h4>
+                <ul>
+                    <li> Egg + cheese - 2500cfa</li>
+                    <li> Egg + Beef - 3000cfa</li>
+                    <li> Beef + cheese - 3000cfa</li>
+                </ul>
+            </div>
+            
+            <div class="menu-item">
+                <h3><img src="./assets/sharwa.jpeg" alt="Shawarma"> Shawarma</h3>
+                <ul>
+                    <li> Beef wrap Shawarma - 1500cfa</li>
+                    <li> Beef + saucisse Shawarma - 2000cfa</li>
+                    <li> Beef + 2 saucisse Shawarma - 2500cfa</li>
+                    <li> Chicken + saucisse Shawarma - 2500cfa</li>
+                    <li> Beef + Saucisse+ Chicken Shawarma - 3000cfa</li>
+                    <li> Beef + 2 Saucisse+ Chicken Shawarma - 3500cfa</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Order Section -->
+<section id="order" class="order py-5 bg-light">
+    <h2 class="text-center mb-5">Place Your Order</h2>
+    <div class="container">
+        <form action="https://formspree.io/f/xeoovqbe" method="POST" id="order-form">
+            <div class="mb-3">
+                <label for="dish" class="form-label">Select Dish</label>
+                <select id="dish" name="dish" class="form-select" required>
+                    <option value="">--Choose a dish--</option>
+                    <option value="Panini">Panini</option>
+                    <option value="Shawarma">Shawarma</option>
+                </select>
+            </div>
+            
+            <div class="mb-3">
+                <label for="quantity" class="form-label">Quantity</label>
+                <input type="number" id="quantity" name="quantity" class="form-control" required min="1" max="10">
+            </div>
+
+            <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-danger">Place Order</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact py-5">
+        <h2 class="text-center mb-5">Contact Us</h2>
+        <div class="container">
+            <form action="https://formspree.io/f/xeoovqbe" method="POST">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" name="message" class="form-control" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-danger">Send Message</button>
+                </div>
+            </form>
+            <div class="text-center mt-4">
+                <p>Or reach us directly at: <strong>+229 67 52 27 33</strong> (Call or message)</p>
+                <p>Or chat with us on <a href="https://wa.me/+22967522733" target="_blank" class="text-danger">WhatsApp</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-danger text-white text-center py-3">
+        <p>&copy; 2025 Lenny Bites. All rights reserved.</p>
+        <p>Opening Hours: 7:00 AM - 13:00 PM</p>
+        <p>Opening Hours: 17:00 pM - 23:59 PM</p>
+        <p>Call or message us at: <strong>+229 67 52 27 33</strong></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

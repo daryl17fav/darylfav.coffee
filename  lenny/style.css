@@ -1,0 +1,183 @@
+/* Global Settings */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(90deg, #fed078, #02572d);
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #02572d !important;
+}
+
+.navbar-nav .nav-link {
+    color: #02572d !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fed078 !important;
+}
+
+/* Hero Section */
+.hero {
+    background: url('./assets/bg.jpeg') center/cover no-repeat;
+    padding: 100px 20px;
+    color: #02572d;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+/* Menu Section */
+.menu h2 {
+    color: #02572d;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px solid #02572d;
+    border-radius: 10px;
+}
+
+/* Flexbox for Panini & Shawarma on the same row */
+.menu-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.menu-item {
+    width: 45%; /* Makes the items take up 45% of the row width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    color: #02572d;
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.menu-item ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu-item ul li {
+    margin-bottom: 10px;
+}
+
+/* Order Section */
+.order h2 {
+    color: #02572d;
+}
+
+.order form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+.contact h2 {
+    color: #02572d;
+}
+
+.contact .text-danger {
+    color: #02572d !important;
+}
+
+.contact form .form-control {
+    border: 2px solid #02572d;
+    border-radius: 5px;
+}
+
+.contact button {
+    background: #02572d;
+    color: #fed078;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.contact button:hover {
+    background: #fed078;
+    color: #02572d;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(90deg, #02572d, #fed078);
+    color: white;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* Custom Image Settings */
+.hero-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-center a {
+    color: #02572d;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.text-center a:hover {
+    color: #fed078;
+}
