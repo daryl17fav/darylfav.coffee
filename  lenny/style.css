@@ -45,7 +45,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: url('./assets/bg.jpeg') center/cover no-repeat;
+    background: url('./assets/bg.jpeg');
     padding: 100px 20px;
     color: #02572d;
 }
